@@ -1,0 +1,343 @@
+%-------------------------
+% Resume in Latex
+% Author : Negar Mirgati
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\usepackage[dvipsnames]{xcolor}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Negar Mirgati} \\ \vspace{3pt}
+    \small
+    \faAt \hspace{.5pt} \href{mailto:mirgati@ualberta.ca}{mirgati@ualberta.ca}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/negar-mirgati-4a84a2108/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/negarmirgati}{GitHub}
+    $|$
+    \faStackOverflow \hspace{.5pt} \href{https://stackoverflow.com/users/6287044/winston}{StackOverflow}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://negarmirgati.github.io}{Portfolio}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://goo.gl/maps/FE5WmENspj7VT9YU9}{Edmonton, Canada}
+\end{center}
+
+
+%----------- Research Interests -----------
+
+\section{Research Interests}
+  \vspace{3pt}
+  
+$\bullet \: Machine \: Learning \; \; \bullet \: Deep \; Learning \; \; \bullet \: Game \: AI \;\; \bullet \: Procedural \: Content \: Generation \: in \: Games $
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {University of Alberta
+      }{Edmonton, Canada}
+      {M.Sc. in Computing Science;   \textbf{GPA: 4.00/4.00}}{Sep 2021 \textbf{--} Sep 2024 (Expected)}
+
+    
+    \resumeSubheading
+      {University of Tehran
+      }{Tehran, Iran}
+      {B.Sc in Computer Hardware Engineering;   \textbf{GPA(last two years): 3.84/4}}{Sep 2015 \textbf{--} Feb 2020}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- RESEARCH EXPERIENCE -----------
+
+\section{Research Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Graduate Researcher at \href{https://www.ualberta.ca/computing-science/index.html}{\color{PineGreen} University of Alberta}}{Edmonton, Canada}
+      {}{Apr 2022 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Working on procedural generation of new levels for platformer-based games using gameplay video. The main purpose of this research is to propose a new method of generating levels for unseen games without annotated datasets - Under supervision of Prof. Matthew Guzdial}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Undergraduate Researcher at \href{https://ece.ut.ac.ir/en} {\color{PineGreen} University of Tehran}}{Tehran, Iran}
+      {}{Jun 2019 \textbf{--} Aug 2019}
+        \resumeItemListStart
+            \resumeItem{Worked on predicting award winner books of Goodreads website using various machine learning techniques. For this project, a tabular dataset was created by crawling book information from the Goodreads Website - Under the supervision of Prof. Behnam Bahrak}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Summer Intern at \href{http://www.ipm.ac.ir/}{\color{PineGreen}Institute for Research in Fundamental Sciences (IPM)}}{Tehran Iran}
+      {}{Jul 2018 \textbf{--} Oct 2018}
+        \resumeItemListStart
+            \resumeItem{Worked on the implementation of genetic, memetic, artificial bee colony, simulated annealing, and firefly algorithms for the problem of server placement optimization.}
+        \resumeItemListEnd
+    
+
+    % \vspace{15pt}
+    \resumeSubheading
+      {Backend Developer at \href{https://synappsgroup.com/}{\color{PineGreen} SynApps} }{Tehran, Iran}
+      {}{Mar 2020 \textbf{--} Oct 2020}
+        \resumeItemListStart
+            \resumeItem{Worked as a Django Backend Developer on the clinic management application project. The application offers features for organizing crowded patient queues, submitting medical history, lab tests and radiology reports of the patients.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
+
+\section{Notable Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+        
+      \resumeProjectHeading
+        {\textbf{Server Placement Optimization} $|$ \emph{\href{https://github.com/NegarMirgati/Sever-Placement-Optimization}{\color{PineGreen}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Implementation of nature-based algorithm for the problem of server placement optimization (Implemented in Python) - Summer internship project @ IPM}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{MAPVis} $|$ \emph{\href{https://github.com/NegarMirgati/MAPVis}{\color{PineGreen}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{A web-bsaed interface used for visualizing the Maximum A-posteriori Estimation (MAP) in data communication (Implemented using Javascript and HTML/CSS)}
+            \resumeItem{The purpose of developing this tool was to help the data communication course students understand the above-mentioned concept.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Light-Seeking Arduino Robot} $|$ \emph{\href{https://github.com/NegarMirgati/Light-Seeking-Robot}{\color{PineGreen}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Main project of the course Real-Time and Embedded Systems at University of Tehran}
+            \resumeItem{Design and development of a robot that simulates a smart moving plant pot, which automatically seeks and moves to lighter places and waters the plant if necessary (Implemented using Arduino .ino (C++)) }
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+%----------- Teaching Experience -----------
+\section{Teaching Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CMPUT174 (Lead Student Instructor)
+      }{Fall 2022 - University of Alberta}
+      {}{}
+
+    \resumeSubheading
+      {CMPUT175
+      }{Winter 2022 - University of Alberta}
+      {}{}
+
+    \resumeSubheading
+      {CMPUT174
+      }{Fall 2021 - University of Alberta}
+      {}{}
+
+    \resumeSubheading
+      {Network Security
+      }{Spring 2021, Fall 2020 - University of Tehran}
+      {}{}
+
+      \resumeSubheading
+      {Data Communications
+      }{Fall 2020 - University of Tehran}
+      {}{}
+    
+    \resumeSubheading
+      {Engineering Probability and Statistics
+      }{Fall 2017 - University of Tehran}
+      {}{}
+  \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Technical Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming: }{Python, Java, C++, R} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ Git, Arduino, Quartus, Xilinx ISE, Hspice} \\ \vspace{3pt}       
+        \textbf{Frameworks: }{Django, React} \\
+        \textbf{ML Frameworks: }{Tensorflow, Keras, Scikit-learn} \\
+        % \textbf{Developer Tools}{: X, X, X} \\
+        % \textbf{Libraries}{: X, X, X} \\
+        % \textbf{Applications}{: X, X, X}
+    }}
+  \resumeSubHeadingListEnd
+
+  \section{Language Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{English: }{Fluent} 
+        \begin{itemize}
+            \item TOEFL ibt (Nov 2020) : 110/120
+        \end{itemize} \\ \vspace{3pt}
+        \textbf{Persian:}{ Native} \\ \vspace{3pt}
+        
+        \textbf{French: }{Elementary}
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- RELEVANT COURSEWORK -----------
+
+\section{Relevant Coursework}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{University of Alberta: }{Intro to Machine Learning (A+), Intro to NLP (A), Approximation Algorithms (A), Knowledge Graphs (A+) } \\ \vspace{3pt}
+        
+        \textbf{University of Tehran (Selective): }{Data Communications (19.5/20), Algorithms Design (19.4/20), Engineering Mathematics (19.5/20), Introduction to Wireless Networks (18.6), Linear Control Systems  (18.5/20), Algorithmic Graph Theory (17.8/20)}
+
+
+        \textbf{Online Coursework: }{Neural Networks and Deep Leaning (\href{https://coursera.org/share/de361704d1530005cb4d7628d505e023}{\color{PineGreen} DeepLearning.ai}), Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning \href{https://www.coursera.org/account/accomplishments/verify/XJAB2USQJ2EJ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course}{\color{PineGreen} (DeepLeaning.ai)}, Convolutional Neural Networks in Tensorflow \href{https://www.coursera.org/account/accomplishments/certificate/3WY464Q3JZTG}{\color{PineGreen} (DeepLearning.ai) }
+    }}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
